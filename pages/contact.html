@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Page de contact</title>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <link rel="icon" href="/assets/img/logo miel site.png" />
+    <link rel="stylesheet" href="/src/output.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anta&display=swap" rel="stylesheet">
+
+  </head>
+
+  <body class="bg-gradient-to-r from-yellow-600 via-yellow-500 to-yellow-300 relative overflow-x-hidden">
+    <div class="w-full mx-auto flex flex-col h-screen justify-between">
+      <!-- OVERLAY  -->
+      <nav id="overlay" class="flex items-center justify-center h-screen w-full fixed z-10 bg-slate-300/50 backdrop-blur-sm translate-x-full transition ease-out delay-250 overscroll-none">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-10 absolute top-6 right-5 cursor-pointer" id="closeBtn">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+          </svg>
+          
+          <ul class="flex flex-col gap-20">
+            <li><a href="/index.html" class="text-2xl font-Anta hover:text-yellow-800">Accueil</a></li>
+            <li><a href="/index.html" class="text-2xl font-Anta hover:text-yellow-800">Où nous trouver ?</a></li>
+            <li><a href="/pages/contact.html" class="text-2xl font-Anta hover:text-yellow-800">Contact</a></li>
+            
+            </ul>
+            </nav>     
+            <!-- NAVBAR  -->
+            
+            <nav class="h-24 flex justify-between items-center px-5">
+              <img src="/assets/img/logo miel site sans fond.png" alt="logo" class="size-20 cursor-pointer">
+              <ul class="hidden md:flex">
+                <li><a href="/index.html" class="nav">Accueil</a></li>
+                <li><a href="/index.html" class="nav">Où nous trouver ?</a></li>
+                <li><a href="/pages/contact.html" class="nav">Contact</a></li>
+                </ul>
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-10 cursor-pointer md:hidden" id="openBtn">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5M12 17.25h8.25" />
+            </svg>
+            </nav>
+        <div class="flex-container container flex justify-center items-center gap-20 h-auto my-20 mx-auto">
+
+          <!-- Formulaire Contact -->
+
+          <div class="w-11/12 md:w-1/2 2xl:w-1/3 backdrop-blur-xl bg-white/30 rounded-lg p-10">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 mb-2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="m11.25 11.25.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9-3.75h.008v.008H12V8.25Z" />
+            </svg>
+            <h1 class="text-black font-semibold font-Anta text-2xl">Contactez-nous</h1>
+            <hr class="w-1/3 h-1 bg-black rounded-sm mb-4 border-none">
+
+            <form action="#" method="get" class="flex flex-col items-center gap-3 relative">
+              <input type="text" name="name" placeholder="Votre nom" class="placeholder:text-slate-800 text-black focus:outline-none focus:ring-2 focus:ring-yellow-600 focus:bg-yellow-500 active:border-black w-full form-input px-4 py-3 rounded-md bg-transparent border border-black/30" required>
+              <input type="email" name="email" placeholder="Votre email" class="placeholder:text-slate-800 text-black focus:outline-none focus:ring-2 focus:ring-yellow-600 focus:bg-yellow-500 active:border-black w-full form-input px-4 py-3 rounded-md bg-transparent border border-black/30" required>
+              <textarea name="message" placeholder="Votre message" class="placeholder:text-slate-800 text-black focus:outline-none focus:ring-2 focus:ring-yellow-600 focus:bg-yellow-500 active:border-black w-full form-input px-4 py-3 rounded-md bg-transparent border border-black/30 resize-none" required></textarea>
+              </form>
+              <button type="submit" class="font-light font-Anta rounded-md px-5 py-3 mt-5 flex gap-3 text-black bg-gradient-to-br to-yellow-500 from-yellow-600">Envoyer <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24  24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M6 12 3.269 3.125A59.769 59.769 0 0 1 21.485 12 59.768 59.768 0 0 1 3.27 20.875L5.999 12Zm0 0h7.5" />
+                </svg>
+              </button>
+          </div>
+
+          <!-- Img right  -->
+
+          <img src="/assets/img/yellow_origami_flower_concept_-gigapixel-standard v2-4x.png" alt="Fleur jaune origami" class="hidden md:block w-1/5">
+          
+          </div>
+        <!-- FOOTER  -->
+          <footer class="bg-gradient-to-t from-gray-900 to-gray-800 shadow-sm">
+            <div class="w-full max-w-screen-xl mx-auto p-4 md:py-8">
+              <div class="sm:flex sm:items-center sm:justify-between">
+                  <a href="#" class="flex items-center justify-center mb-4 sm:mb-0 space-x-3 rtl:space-x-reverse">
+                      <img src="/assets/img/logo miel site.png" class="h-8" alt="Logo" />
+                      <span class="self-center text-xl whitespace-nowrap dark:text-white font-Anta">La Petite Butineuse</span>
+                  </a>
+                  <ul class="flex flex-wrap items-center justify-center mb-6 text-sm font-medium text-gray-500 sm:mb-0 dark:text-gray-400 font-Anta">
+                      <li>
+                          <a href="#" class="hover:underline me-4 md:me-6">A propos</a>
+                      </li>
+                      <li>
+                          <a href="#" class="hover:underline me-4 md:me-6">Mentions légales</a>
+                      </li>
+                      <li>
+                          <a href="#" class="hover:underline">Contact</a>
+                      </li>
+                  </ul>
+              </div>
+              <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
+              <span class="block text-sm text-gray-500 sm:text-center dark:text-gray-400 text-center">© 2024 <a href="#" class="hover:underline font-Anta">La Petite Butineuse</a>. Tous droits réservés.</span><br>
+              <span class="block text-sm text-gray-500 sm:text-center dark:text-gray-400 text-center">KD Web Design</span>
+            </div>
+          </footer>
+    </div>
+
+    
+    <script src="/pages/script.js"></script>
+  </body>
+</html>

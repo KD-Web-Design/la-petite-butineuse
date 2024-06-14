@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="fr" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>La Petite Butineuse</title>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <link rel="icon" href="/assets/img/logo miel site.png" />
+    <link rel="stylesheet" href="/src/output.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anta&display=swap" rel="stylesheet">
+  </head>
+  <body class="bg-gradient-to-r from-yellow-600 via-yellow-500 to-yellow-300 relative overflow-x-hidden">
+
+    <div class="w-full mx-auto flex flex-col justify-between">
+
+      
+      <!-- SECTION 1 -->
+      
+      <section id="first-section" class="h-screen bg-no-repeat bg-cover relative" style="background-image: url(/assets/img/bg.jpg);">
+          <!-- OVERLAY  -->
+          <nav id="overlay" class="flex items-center justify-center h-screen w-full fixed z-10 bg-slate-300/50 backdrop-blur-sm translate-x-full transition ease-out delay-250 overscroll-none">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-10 absolute top-6 right-5 cursor-pointer" id="closeBtn">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+            </svg>
+              
+              <ul class="flex flex-col gap-20 list-disc">
+                <li id="firstLink"><a href="#second-section" class="text-2xl font-Anta hover:text-yellow-800">Nos miels</a></li>
+                <li id="secondLink"><a href="#third-section" class="text-2xl font-Anta hover:text-yellow-800">Où nous trouver ?</a></li>
+                <li><a href="/pages/contact.html" class="text-2xl font-Anta hover:text-yellow-800">Contact</a></li>
+                
+              </ul>
+          </nav>     
+                <!-- NAVBAR  -->
+                
+                <nav class="h-24 flex justify-between items-center px-5 backdrop-blur-xl bg-white/20">
+                  <img src="/assets/img/logo miel site sans fond.png" alt="logo" class="size-20 cursor-pointer">
+                  <ul class="hidden md:flex">
+                    <li><a href="#second-section" class="nav">Nos miels</a></li>
+                    <li><a href="#third-section" class="nav">Où nous trouver ?</a></li>
+                    <li><a href="/pages/contact.html" class="nav">Contact</a></li>
+                    </ul>
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-10 cursor-pointer md:hidden" id="openBtn">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5M12 17.25h8.25" />
+                  </svg>
+                </nav>      
+
+          <div class="w-11/12 md:w-2/3 rounded-lg bg-white/40 backdrop-blur-lg shadow-xl p-8 font-Anta text-center absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+            <h2 class="font-bold text-xl tracking-wide">Le saviez-vous ?</h2>
+            <br>
+            <p>
+            Si vous pensez qu'un essaim peut contenir environ 60 000 individus,
+            alors vous devez également penser qu'une ruche a un grand besoin de
+            nourriture pour assurer la survie de tous les membres de la famille.
+            Chaque ruche produit beaucoup de miel, en termes de quantité on peut
+            parler de 15 kg jusqu'à environ 30 kg. C'est un nombre énorme quand
+            on considère la taille de ces petits animaux. Pour y parvenir, les
+            abeilles récoltent le nectar de millions de fleurs .
+            </p>
+          </div>
+        </section>
+
+        <!-- SECTION 2  -->
+
+        <section id="second-section" class="h-screen">
+          
+          <div class="grid grid-cols-1 md:grid-cols-2 h-screen ">
+            <div class="bg-no-repeat bg-cover h-[50vh] md:h-screen md:order-2" style="background-image: url(/assets/img/christina-branco-G_xYDS6UuXo-unsplash.jpg);">
+
+            </div>
+            <div class="flex flex-col lg:flex-row justify-center items-center">
+              <h1 class="text-5xl lg:text-6xl w-3/4 font-Anta my-5">Découvrez dés <span class="font-bold bg-gradient-to-r from-red-600 to-orange-600 text-transparent bg-clip-text">maintenant.</span></h1>
+              <a href="/pages/pots.html"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-16 cursor-pointer transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300">
+                <path stroke-linecap="round" stroke-linejoin="round" d="m12.75 15 3-3m0 0-3-3m3 3h-7.5M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+              </svg>
+              </a>
+            </div>
+          </div>
+          <hr class="bg-black h-1 border-none rounded-lg w-4/5 md:w-full mx-auto ">
+        </section>
+
+        <!-- SECTION 3  -->
+
+        <section id="third-section" class="h-auto md:h-screen md:w-11/12 grid grid-cols-1 md:grid-cols-2 mx-auto md:my-5">
+          <div class="flex flex-col gap-10 justify-center my-5 w-2/3 mx-auto">
+            <h2 class="text-2xl lg:text-3xl font-Anta font-bold text-white bg-slate-800 px-7 rounded-r-xl">Ou nous trouver ?</h2>
+            <p class="font-Anta">Je vous accueille tous les dimanche matins sur le marché de Saint
+              Jean-de-Braye. <br>
+              <br>
+              Les références des pots varient régulièrement alors n'hésitez pas à venir découvrir notre stand &#x1F609;
+            </p>
+              </div>
+
+          <div class="flex items-center justify-center">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15128.014140315749!2d1.9592447755651794!3d47.91161275134486!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e4fcc936907ff1%3A0x6d8210c74aed78e0!2sMarch%C3%A9%20de%20Saint%20Jean%20de%20Braye!5e0!3m2!1sfr!2sfr!4v1718033039210!5m2!1sfr!2sfr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="w-full md:rounded-lg shadow-lg"></iframe>
+          </div>
+        </section>
+
+        <!-- FOOTER  -->
+        <footer class="bg-gradient-to-t from-gray-900 to-gray-800 shadow-sm">
+          <div class="w-full max-w-screen-xl mx-auto p-4 md:py-8">
+            <div class="sm:flex sm:items-center sm:justify-between">
+                <a href="#" class="flex items-center justify-center mb-4 sm:mb-0 space-x-3 rtl:space-x-reverse">
+                    <img src="/assets/img/logo miel site.png" class="h-8" alt="Logo" />
+                    <span class="self-center text-xl whitespace-nowrap dark:text-white font-Anta">La Petite Butineuse</span>
+                </a>
+                <ul class="flex flex-wrap items-center justify-center mb-6 text-sm font-medium text-gray-500 sm:mb-0 dark:text-gray-400 font-Anta">
+                    <li>
+                        <a href="#" class="hover:underline me-4 md:me-6">A propos</a>
+                    </li>
+                    <li>
+                        <a href="#" class="hover:underline me-4 md:me-6">Mentions légales</a>
+                    </li>
+                    <li>
+                        <a href="/pages/contact.html" class="hover:underline">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
+            <span class="block text-sm text-gray-500 sm:text-center dark:text-gray-400 text-center">© 2024 <a href="#" class="hover:underline font-Anta">La Petite Butineuse</a>. Tous droits réservés.</span><br>
+            <span class="block text-sm text-gray-500 sm:text-center dark:text-gray-400 text-center">KD Web Design</span>
+          </div>
+        </footer>
+
+
+
+
+    </div>
+
+
+
+
+
+
+    <script src="/pages/script.js"></script>
+  </body>
+</html>
