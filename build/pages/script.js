@@ -4,6 +4,25 @@ const overlay = document.getElementById('overlay')
 const firstLink = document.getElementById('firstLink')
 const secondLink = document.getElementById('secondLink')
 
+let currentSlideA = 0;
+const slidesA = document.querySelectorAll('.carousel-container-a > div');
+const dotsA = document.querySelectorAll('.dot-a');
+const carouselContainerA = document.querySelector('.carousel-container-a');
+
+let currentSlideB = 0;
+const slidesB = document.querySelectorAll('.carousel-container-b > div');
+const dotsB = document.querySelectorAll('.dot-b');
+const carouselContainerB = document.querySelector('.carousel-container-b');
+
+let currentSlideC = 0;
+const slidesC = document.querySelectorAll('.carousel-container-c > div');
+const dotsC = document.querySelectorAll('.dot-c');
+const carouselContainerC = document.querySelector('.carousel-container-c');
+
+let currentSlideD = 0;
+const slidesD = document.querySelectorAll('.carousel-container-d > div');
+const dotsD = document.querySelectorAll('.dot-d');
+const carouselContainerD = document.querySelector('.carousel-container-d');
 
 openBtn.addEventListener('click', () => {
     overlay.classList.toggle("translate-x-full")
@@ -32,10 +51,6 @@ secondLink.addEventListener('click', () => {
 
 // CAROUSEL A 
 
-let currentSlideA = 0;
-const slidesA = document.querySelectorAll('.carousel-container-a > div');
-const dotsA = document.querySelectorAll('.dot-a');
-const carouselContainerA = document.querySelector('.carousel-container-a');
 
 function showSlideA(index) {
     const offsetA = -index * 100;
@@ -49,7 +64,7 @@ function showSlideA(index) {
 
 function nextSlideA() {
     currentSlideA = (currentSlideA + 1) % slidesA.length;
-    showSlide(currentSlideA);
+    showSlideA(currentSlideA);
 }
 
 function prevSlideA() {
@@ -59,10 +74,6 @@ function prevSlideA() {
 
 // CAROUSEL B 
 
-let currentSlideB = 0;
-const slidesB = document.querySelectorAll('.carousel-container-b > div');
-const dotsB = document.querySelectorAll('.dot-b');
-const carouselContainerB = document.querySelector('.carousel-container-b');
 
 function showSlideB(index) {
     const offsetB = -index * 100;
@@ -86,10 +97,6 @@ function prevSlideB() {
 
 // CAROUSEL C 
 
-let currentSlideC = 0;
-const slidesC = document.querySelectorAll('.carousel-container-c > div');
-const dotsC = document.querySelectorAll('.dot-c');
-const carouselContainerC = document.querySelector('.carousel-container-c');
 
 function showSlideC(index) {
     const offsetC = -index * 100;
@@ -113,10 +120,6 @@ function prevSlideC() {
 
 // CAROUSEL D 
 
-let currentSlideD = 0;
-const slidesD = document.querySelectorAll('.carousel-container-d > div');
-const dotsD = document.querySelectorAll('.dot-d');
-const carouselContainerD = document.querySelector('.carousel-container-d');
 
 function showSlideD(index) {
     const offsetD = -index * 100;
