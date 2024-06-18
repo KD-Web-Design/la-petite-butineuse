@@ -24,6 +24,7 @@ const slidesD = document.querySelectorAll('.carousel-container-d > div');
 const dotsD = document.querySelectorAll('.dot-d');
 const carouselContainerD = document.querySelector('.carousel-container-d');
 
+///////////////////////// OVERLAY
 openBtn.addEventListener('click', () => {
     overlay.classList.toggle("translate-x-full")
     document.documentElement.style.overflow = 'hidden';
@@ -139,4 +140,19 @@ function nextSlideD() {
 function prevSlideD() {
     currentSlideD = (currentSlideD - 1 + slidesD.length) % slidesD.length;
     showSlideD(currentSlideD);
+}
+
+
+
+
+// FORMULAIRE CONTACT 
+
+function sendMail() {
+    let parms = {
+        name : document.getElementById('name').value,
+        email : document.getElementById('email').value,
+        message : document.getElementById('message').value
+    }
+
+    emailjs.send("service_xaj9csg","template_incpo59", parms).then(alert("Message Envoyé !"))
 }
